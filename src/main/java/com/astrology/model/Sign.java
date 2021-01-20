@@ -12,14 +12,10 @@ public class Sign {
 
     @Id
     private String id;
-    private enum Element {
-        FIRE, WATER, EARTH, AIR
-    }
-    private enum Mode {
-        CARDINAL, FIXED, MUTABLE
-    }
-    private House house;
-    private AstralBody astralBody;
+    private String element;
+    private String mode;
+    private String houseRuler;
+    private String Attributes;
 
 
 

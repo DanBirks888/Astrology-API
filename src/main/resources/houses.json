@@ -1,0 +1,50 @@
+[
+  {
+    "House": 1,
+    "Attributes": "The image we project to others, the first impression we make, how we start things, our defense mechanisms, our relationship with our immediate environment, our general outlook on life, and our physical appearance."
+  },
+  {
+    "House": 2,
+    "Attributes": "Money and personal finances, sense of self-worth and basic values, personal possessions."
+  },
+  {
+    "House": 3,
+    "Attributes": "The lower mind, communication, interactions in our immediate environment, siblings and early environment, neighbors, thoughts, short trips, writing and speaking, how we formulate our thoughts, language skills, media and communications."
+  },
+  {
+    "House": 4,
+    "Attributes": "Our psychological foundations and roots, family, home life, instinctive behavior, the mother or the more “maternal” parent/caregiver, ancestry, our connection with our past, our sense of security, domestic life, real estate."
+  },
+  {
+    "House": 5,
+    "Attributes": "Creative self-expression, pleasure and entertainment, all forms of “play”, speculation and gambling, pastimes, hobbies, attitude towards romance, romantic relationships, lovers as opposed to partners, attitude towards having fun, drama, adornments and costumes."
+  },
+  {
+    "House": 6,
+    "Attributes": "Work and job (as opposed to career), techniques and methods, daily life, order, self-improvement, health, nutrition, attitude towards food, service, attitude towards service and co-workers, helpfulness, pets, attitude towards routine and organization, how we refine and perfect ourselves, aptitudes."
+  },
+  {
+    "House": 7,
+    "Attributes": "Companionship, the alter ego, partnerships, one-to-one relationships, marriage, the first marriage, the “significant other”, business partnerships, competitors, our “shadow self”, lawyers, mediators, counselors, contracts."
+  },
+  {
+    "House": 8,
+    "Attributes": "Transformation and crisis, our attitude towards crisis and change, sexuality, sex, death and rebirth, personal growth and transformation, regeneration, our partner’s resources, addictions, psychology, others’ money, taxes, divorce/alimony, inheritance."
+  },
+  {
+    "House": 9,
+    "Attributes": "Our personal belief system, our sense of adventure, exploration, religious beliefs and personal philosophy, higher education, long-distance travel, morals, foreign languages and cultures, personal truths, publishing, commerce."
+  },
+  {
+    "House": 10,
+    "Attributes": "Career and profession, contribution to society, position in society, social standing, reputation, material success and position, how we carve out an identity for ourselves, achievement, authority figures, paternal figures, the father or most “paternal” parent/caregiver, bosses, governments, attitude towards responsibility, attitude towards abiding by the law, desire for achievement."
+  },
+  {
+    "House": 11,
+    "Attributes": "Acquaintances and friends, groups, organizations, hopes, wishes, aspirations, personal goals, our sense of our true inner purpose, our sense of the group, humanity."
+  },
+  {
+    "House": 12,
+    "Attributes": "That which is hidden or below the surface, karma, self-undoing, soul growth, hidden strengths and hidden weaknesses, dreams, private affairs, lost items, hospitals and prisons, spiritual studies."
+  }
+]
