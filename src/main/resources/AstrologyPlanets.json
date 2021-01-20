@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Sun",
+    "ruler": "Leo",
+    "house": {
+      "houseNumber": 5,
+      "houseMeaning": "House of fun, flirting and activities"
+    },
+    "sign": {
+      "name": "Leonine",
+      "element": "Fire",
+      "signMeaning": "Performer, showman etc"
+    }
+  },
+  {
+    "name": "Moon",
+    "ruler": "Cancer",
+    "house": {
+      "houseNumber": 4,
+      "houseMeaning": "House of Nurture, snugging and family"
+    },
+    "sign": {
+      "name": "Cancerine",
+      "element": "Water",
+      "signMeaning": "Emotional nurture, sentimentality"
+    }
+  }
+]
