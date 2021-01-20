@@ -17,11 +17,11 @@ public class DBSeeder implements ApplicationListener<ApplicationReadyEvent> {
 
     @Value("classpath:signs.json")
     private Resource signs;
-    private PlanetRepository planetRepository;
+    private SignRepository signRepository;
     private ObjectMapper objectMapper;
 
-    public DBSeeder(PlanetRepository planetRepository, ObjectMapper objectMapper) {
-        this.planetRepository = planetRepository;
+    public DBSeeder(SignRepository signRepository, ObjectMapper objectMapper) {
+        this.signRepository = signRepository;
         this.objectMapper = objectMapper;
     }
 
@@ -31,7 +31,7 @@ public class DBSeeder implements ApplicationListener<ApplicationReadyEvent> {
 
         List<Sign> signs1 = objectMapper.readValue(signs.getInputStream(), new TypeReference<List<Sign>>() {
         });
-        this.planetRepository.deleteAll();
-        this.planetRepository.saveAll(signs1);
+        this.signRepository.deleteAll();
+        this.signRepository.saveAll(signs1);
     }
 }

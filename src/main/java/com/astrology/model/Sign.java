@@ -16,7 +16,4 @@ public class Sign {
     private String mode;
     private String houseRuler;
     private String Attributes;
-
-
-
 }
