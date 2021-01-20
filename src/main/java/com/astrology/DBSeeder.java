@@ -1,5 +1,6 @@
 package com.astrology;
 
+import com.astrology.model.Sign;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
@@ -14,8 +15,8 @@ import java.util.List;
 @Component
 public class DBSeeder implements ApplicationListener<ApplicationReadyEvent> {
 
-    @Value("classpath:AstrologyPlanets.json")
-    private Resource planets;
+    @Value("classpath:signs.json")
+    private Resource signs;
     private PlanetRepository planetRepository;
     private ObjectMapper objectMapper;
 
@@ -28,9 +29,9 @@ public class DBSeeder implements ApplicationListener<ApplicationReadyEvent> {
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
 
-        List<Planet> planets1 = objectMapper.readValue(planets.getInputStream(), new TypeReference<List<Planet>>() {
+        List<Sign> signs1 = objectMapper.readValue(signs.getInputStream(), new TypeReference<List<Sign>>() {
         });
         this.planetRepository.deleteAll();
-        this.planetRepository.saveAll(planets1);
+        this.planetRepository.saveAll(signs1);
     }
 }

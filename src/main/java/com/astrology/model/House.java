@@ -1,4 +1,4 @@
-package com.astrology;
+package com.astrology.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +9,7 @@ public class House {
 
     private int houseNumber;
     private String houseMeaning;
+
 
     public House(int houseNumber, String houseMeaning) {
         this.houseNumber = houseNumber;
