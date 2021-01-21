@@ -1,12 +1,9 @@
-package com.astrology;
+package com.astrology.repo;
 
-import com.astrology.model.Sign;
+import com.astrology.model.Mode;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SignRepository extends MongoRepository<Sign, String> {
-
+public interface ModeRepository extends MongoRepository<Mode, String> {
 }
-
-

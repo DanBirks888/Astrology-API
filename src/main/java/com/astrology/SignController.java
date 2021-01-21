@@ -1,6 +1,7 @@
 package com.astrology;
 
 import com.astrology.model.Sign;
+import com.astrology.repo.SignRepository;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

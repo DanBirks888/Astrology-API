@@ -1,57 +1,57 @@
 [
   {
-    "astral-body": "Sun",
-    "Single Line Meaning": ["Self", "Main Concerns", "Vitality"],
-    "Attributes": "The Sun, the giver of life, represents our conscious mind in Astrology. It represents our will to live and our creative life force."
+    "astralBody": "Sun",
+    "singleLineMeaning": ["Self", "Main Concerns", "Vitality"],
+    "attributes": "The Sun, the giver of life, represents our conscious mind in Astrology. It represents our will to live and our creative life force."
   },
   {
-    "astral-body": "Moon",
-    "Single Line Meaning": ["Emotions", "Instincts", "Habits"],
-    "Attributes": "The Moon, in Astrology, is the ruler of Cancer. The Moon represents our deepest personal needs, our basic habits and reactions, and our unconscious."
+    "astralBody": "Moon",
+    "singleLineMeaning": ["Emotions", "Instincts", "Habits"],
+    "attributes": "The Moon, in Astrology, is the ruler of Cancer. The Moon represents our deepest personal needs, our basic habits and reactions, and our unconscious."
   },
   {
-    "Astral Body": "Mercury",
-    "Single Line Meaning": ["Communication", "Intellect", "Reason"],
-    "Attributes": "Mercury, Mercury Symbol Glyphthe messenger of the gods, is the ruler of Gemini and Virgo. Mercury is the messenger in Astrology as it is in Mythology. It is the planet of day-to-day expression and communication. Mercury’s action is to take things apart and put them back together again. It is an opportunistic planet, decidedly unemotional and curious."
+    "astralBody": "Mercury",
+    "singleLineMeaning": ["Communication", "Intellect", "Reason"],
+    "attributes": "Mercury, Mercury Symbol Glyphthe messenger of the gods, is the ruler of Gemini and Virgo. Mercury is the messenger in Astrology as it is in Mythology. It is the planet of day-to-day expression and communication. Mercury’s action is to take things apart and put them back together again. It is an opportunistic planet, decidedly unemotional and curious."
   },
   {
-    "Astral Body": "Venus",
-    "Single Line Meaning": ["Love", "Beauty", "Indulgence"],
-    "Attributes": "In Astrology, Venus has dual rulership over Libra and Taurus. As a result, Venus represents two main areas of our life: love and money."
+    "astralBody": "Venus",
+    "singleLineMeaning": ["Love", "Beauty", "Indulgence"],
+    "attributes": "In Astrology, Venus has dual rulership over Libra and Taurus. As a result, Venus represents two main areas of our life: love and money."
   },
   {
-    "Astral Body": "Mars",
-    "Single Line Meaning": ["Action", "Desire", "Aggression"],
-    "Attributes": "In astrology, Mars is the planet of energy, action, and desire. It is the survival instinct and can be thought of as the “leftover” animal nature of man."
+    "astralBody": "Mars",
+    "singleLineMeaning": ["Action", "Desire", "Aggression"],
+    "attributes": "In astrology, Mars is the planet of energy, action, and desire. It is the survival instinct and can be thought of as the “leftover” animal nature of man."
   },
   {
-    "Astral Body": "Jupiter",
-    "Single Line Meaning": ["Expansion", "Optimism", "Adundance"],
-    "Attributes": "In Astrology, Jupiter is a planet of plenty. It is tolerant and expansive. The first of the social planets, Jupiter seeks insight through knowledge. Some of this planet’s keywords include morality, gratitude, hope, honor, and the law. Jupiter is a planet of broader purpose, reach, and possibility."
+    "astralBody": "Jupiter",
+    "singleLineMeaning": ["Expansion", "Optimism", "Adundance"],
+    "attributes": "In Astrology, Jupiter is a planet of plenty. It is tolerant and expansive. The first of the social planets, Jupiter seeks insight through knowledge. Some of this planet’s keywords include morality, gratitude, hope, honor, and the law. Jupiter is a planet of broader purpose, reach, and possibility."
   },
   {
-    "Astral Body": "Saturn",
-    "Single Line Meaning": ["Restriction", "Pessimism", "Structure"],
-    "Attributes": "In astrology, Saturn is associated with restriction and limitation. Where Jupiter expands, Saturn constricts. Although the themes of Saturn seem depressing, Saturn brings structure and meaning to our world. Saturn knows the limits of time and matter. Saturn reminds us of our boundaries, our responsibilities, and our commitments. It brings definition to our lives. Saturn makes us aware of the need for self-control and of boundaries and our limits."
+    "astralBody": "Saturn",
+    "singleLineMeaning": ["Restriction", "Pessimism", "Structure"],
+    "attributes": "In astrology, Saturn is associated with restriction and limitation. Where Jupiter expands, Saturn constricts. Although the themes of Saturn seem depressing, Saturn brings structure and meaning to our world. Saturn knows the limits of time and matter. Saturn reminds us of our boundaries, our responsibilities, and our commitments. It brings definition to our lives. Saturn makes us aware of the need for self-control and of boundaries and our limits."
   },
   {
-    "Astral Body": "Uranus",
-    "Single Line Meaning": ["Rebellion", "Eccentricity", "Upheaval"],
-    "Attributes": "In Astrology, the energies of Uranus are electric and crammed with change. Uranus is forward-looking. It balks at tradition and celebrates originality and individuality. Uranus is associated with technology, innovation, discovery, and all that is progressive."
+    "astralBody": "Uranus",
+    "singleLineMeaning": ["Rebellion", "Eccentricity", "Upheaval"],
+    "attributes": "In Astrology, the energies of Uranus are electric and crammed with change. Uranus is forward-looking. It balks at tradition and celebrates originality and individuality. Uranus is associated with technology, innovation, discovery, and all that is progressive."
   },
   {
-    "Astral Body": "Neptune",
-    "Single Line Meaning": ["Imagination", "Dreams", "Delusions"],
-    "Attributes": "In astrology, Neptune is considered a planet of inspiration, dreams, psychic receptivity, illusion, and confusion. Neptune rules spirituality, and all things subtle. A youthful, and sometimes naive, spirit characterizes those with a strong placement of Neptune in their natal charts."
+    "astralBody": "Neptune",
+    "singleLineMeaning": ["Imagination", "Dreams", "Delusions"],
+    "attributes": "In astrology, Neptune is considered a planet of inspiration, dreams, psychic receptivity, illusion, and confusion. Neptune rules spirituality, and all things subtle. A youthful, and sometimes naive, spirit characterizes those with a strong placement of Neptune in their natal charts."
   },
   {
-    "Astral Body": "Pluto",
-    "Single Line Meaning": ["Transformation", "Obsession", "Power"],
-    "Attributes": "In Astrology, the energies of Pluto are transforming. Pluto represents subconscious forces, ruling all that is below the surface."
+    "astralBody": "Pluto",
+    "singleLineMeaning": ["Transformation", "Obsession", "Power"],
+    "attributes": "In Astrology, the energies of Pluto are transforming. Pluto represents subconscious forces, ruling all that is below the surface."
   },
   {
-    "Astral Body": "Chiron",
-    "Single Line Meaning": ["Self Sabotage", "Weakness", "Pain"],
-    "Attributes": " In the natal chart, Chiron is symbolized by the “wounded healer”. It represents our deepest wound, and our efforts to heal the wound. Chiron was named after the centaur in Greek mythology who was a healer and teacher who, ironically, could not heal himself."
+    "astralBody": "Chiron",
+    "singleLineMeaning": ["Self Sabotage", "Weakness", "Pain"],
+    "attributes": " In the natal chart, Chiron is symbolized by the “wounded healer”. It represents our deepest wound, and our efforts to heal the wound. Chiron was named after the centaur in Greek mythology who was a healer and teacher who, ironically, could not heal himself."
   }
 ]

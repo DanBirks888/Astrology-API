@@ -1,15 +1,15 @@
 [
   {
-    "Mode": "Fire",
-    "Description": "Cancer, Aries, Libra and Capricorn share this modality. The Cardinal Signs are known as the initiators of the Zodiac. You are not likely to find a person in this group slacking off- they like to keep one step ahead of the crowd. They have a strong need to control what is happening around them."
+    "mode": "Fire",
+    "attributes": "Cancer, Aries, Libra and Capricorn share this modality. The Cardinal Signs are known as the initiators of the Zodiac. You are not likely to find a person in this group slacking off- they like to keep one step ahead of the crowd. They have a strong need to control what is happening around them."
   },
   {
-    "Mode": "Water",
-    "Description": "If you are a Leo, Taurus, Aquarius or Scorpio, you are a fixed sign. The fixed signs are not as interested in manipulating their environment as their Cardinal brothers and sisters- they are happy to concentrate on personal matters and will resist outside attempts at trying to change their lives. They tend to hang on to the past, which is their biggest weakness, but they are strong in their stability."
+    "mode": "Water",
+    "attributes": "If you are a Leo, Taurus, Aquarius or Scorpio, you are a fixed sign. The fixed signs are not as interested in manipulating their environment as their Cardinal brothers and sisters- they are happy to concentrate on personal matters and will resist outside attempts at trying to change their lives. They tend to hang on to the past, which is their biggest weakness, but they are strong in their stability."
   },
   {
-    "Mode": "Earth",
-    "Description": "The Mutable Signs are Virgo, Gemini, Sagittarius, and Pisces. This group is the most exposed to environmental influences. It’s easy for these people to let go, but they do tend to look for security to anchor their own instabilities on."
+    "mode": "Earth",
+    "attributes": "The Mutable Signs are Virgo, Gemini, Sagittarius, and Pisces. This group is the most exposed to environmental influences. It’s easy for these people to let go, but they do tend to look for security to anchor their own instabilities on."
   }
 ]
 

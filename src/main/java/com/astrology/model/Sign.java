@@ -7,13 +7,25 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Getter
 @Setter
-@Document(collation = "Signs")
+@Document(collection = "Signs")
 public class Sign {
 
     @Id
     private String id;
+    private String zodiac;
     private String element;
     private String mode;
     private String houseRuler;
-    private String Attributes;
+    private String attributes;
+
+    public Sign(String zodiac, String element, String mode, String houseRuler, String attributes) {
+        this.zodiac = zodiac;
+        this.element = element;
+        this.mode = mode;
+        this.houseRuler = houseRuler;
+        this.attributes = attributes;
+    }
+
+    public Sign() {
+    }
 }

@@ -6,17 +6,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Getter
 @Setter
-@Document(collection = "Elements")
-public class Element {
+@Document(collection = "Modes")
+public class Mode {
 
-    private String element;
+    private String mode;
     private String attributes;
 
-    public Element(String element, String attributes) {
-        this.element = element;
+    public Mode(String mode, String attributes) {
+        this.mode = mode;
         this.attributes = attributes;
     }
 
-    public Element() {
+    public Mode() {
     }
 }
