@@ -11,7 +11,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Sign {
 
     @Id
-    private String id;
     private String zodiac;
     private String element;
     private String mode;
