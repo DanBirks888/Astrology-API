@@ -1,5 +1,7 @@
 package com.astrology.controller;
 
+import com.astrology.model.House;
+import com.astrology.model.Mode;
 import com.astrology.model.Sign;
 import com.astrology.repo.SignRepository;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +32,17 @@ public class SignController {
     public List<Sign> getSignByElement(@PathVariable("element") String element) {
         return this.signRepository.findByElement(element);
     }
+
+    @GetMapping("mode/{mode}")
+    public List<Mode> getSignByMode(@PathVariable("mode") String mode) {
+        return this.signRepository.findByMode(mode);
+    }
+
+    @GetMapping("house/{house}")
+    public List<House> getSignByHouse(@PathVariable("house") String house) {
+        return this.signRepository.findByHouse(Integer.parseInt(house));
+    }
+
 
 
 

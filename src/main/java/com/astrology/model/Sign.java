@@ -14,17 +14,19 @@ public class Sign {
     private String zodiac;
     private String element;
     private String mode;
-    private String houseRuler;
+    private String house;
     private String attributes;
 
-    public Sign(String zodiac, String element, String mode, String houseRuler, String attributes) {
+    public Sign(String zodiac, String element, String mode, String house, String attributes) {
         this.zodiac = zodiac;
         this.element = element;
         this.mode = mode;
-        this.houseRuler = houseRuler;
+        this.house = house;
         this.attributes = attributes;
     }
 
     public Sign() {
     }
+
+
 }

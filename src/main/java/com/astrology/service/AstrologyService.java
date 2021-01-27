@@ -22,8 +22,8 @@ public class AstrologyService {
         this.signRepository = signRepository;
     }
 
-    public CustomAstroSearch customAstroSearch() {
-        
-    }
+//    public CustomAstroSearch customAstroSearch() {
+//
+//    }
 
 }

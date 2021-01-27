@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AstroRepository extends MongoRepository<AstralBody, String> {
+//    List<String> findBySingleLineMeaningById(String id);
 
 }
