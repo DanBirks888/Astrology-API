@@ -30,8 +30,8 @@ public class AstralController {
         return this.astroRepository.findById(planet).orElseThrow();
     }
 
-//    @GetMapping("/singleLineMeaning/{planet}")
-//    public List<String> getSingleLineMeaningById(@PathVariable("planet") String planet) {
-//        return this.astroRepository.findBySingleLineMeaningById(planet);
+//    @GetMapping("/astralBody/{astralBody}")
+//    public List<String> getWordMeaning(@PathVariable("astralBody") String astralBody) {
+//        return this.astroRepository.findWordMeaningByAstralBody(astralBody);
 //    }
 }

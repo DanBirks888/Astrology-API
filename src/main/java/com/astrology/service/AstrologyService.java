@@ -1,11 +1,14 @@
 package com.astrology.service;
 
+import com.astrology.model.AstroSearch;
 import com.astrology.repo.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Service;
 
 @Getter
 @Setter
+@Service
 public class AstrologyService {
 
     private AstroRepository astroRepository;
@@ -22,8 +25,9 @@ public class AstrologyService {
         this.signRepository = signRepository;
     }
 
-//    public CustomAstroSearch customAstroSearch() {
+//    public AstroSearch customAstroSearch(String sign, String sign, String house, string element, mode) {
 //
+//        return new AstroSearch(new AstroSearch(getAstroRepository()));
 //    }
 
 }
