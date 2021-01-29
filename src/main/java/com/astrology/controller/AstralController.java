@@ -3,6 +3,8 @@ package com.astrology.controller;
 
 import com.astrology.model.AstralBody;
 import com.astrology.repo.AstroRepository;
+import com.astrology.service.AstralBodyService;
+import com.astrology.service.AstrologyService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,9 +17,11 @@ import java.util.List;
 public class AstralController {
 
     private AstroRepository astroRepository;
+    private AstralBodyService astralBodyService;
 
-    public AstralController(AstroRepository astroRepository) {
+    public AstralController(AstroRepository astroRepository, AstralBodyService astralBodyService) {
         this.astroRepository = astroRepository;
+        this.astralBodyService = astralBodyService;
     }
 
     @GetMapping("/bodies")
@@ -30,8 +34,8 @@ public class AstralController {
         return this.astroRepository.findById(planet).orElseThrow();
     }
 
-//    @GetMapping("/astralBody/{astralBody}")
-//    public List<String> getWordMeaning(@PathVariable("astralBody") String astralBody) {
-//        return this.astroRepository.findWordMeaningByAstralBody(astralBody);
-//    }
+    @GetMapping("/astralBody/{astralBody}")
+    public List<String> getWordMeaning(@PathVariable("astralBody") String astralBody) {
+        return this.astralBodyService.singleLineMeaning(astralBody);
+    }
 }

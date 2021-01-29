@@ -17,15 +17,10 @@ public class AstrologyService {
     private ModeRepository modeRepository;
     private SignRepository signRepository;
 
-    public AstrologyService(AstroRepository astroRepository, ElementRepository elementRepository, HouseRepository houseRepository, ModeRepository modeRepository, SignRepository signRepository) {
-        this.astroRepository = astroRepository;
-        this.elementRepository = elementRepository;
-        this.houseRepository = houseRepository;
-        this.modeRepository = modeRepository;
-        this.signRepository = signRepository;
+    public AstrologyService() {
     }
 
-//    public AstroSearch customAstroSearch(String sign, String sign, String house, string element, mode) {
+    //    public AstroSearch customAstroSearch(String sign, String sign, String house, string element, mode) {
 //
 //        return new AstroSearch(new AstroSearch(getAstroRepository()));
 //    }
