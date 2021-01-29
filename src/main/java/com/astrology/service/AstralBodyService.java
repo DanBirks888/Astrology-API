@@ -16,7 +16,8 @@ public class AstralBodyService {
     private AstralBody astralBody;
     private AstroRepository astroRepository;
 
-    public AstralBodyService() {
+    public AstralBodyService(AstroRepository astroRepository) {
+        this.astroRepository = astroRepository;
     }
 
     public List<String> singleLineMeaning(String astralBody) {
