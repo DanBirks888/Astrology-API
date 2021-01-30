@@ -2,9 +2,7 @@ package com.astrology.controller;
 
 
 import com.astrology.model.AstralBody;
-import com.astrology.repo.AstroRepository;
 import com.astrology.service.AstralBodyService;
-import com.astrology.service.AstrologyService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,26 +14,24 @@ import java.util.List;
 @RequestMapping("/astrals")
 public class AstralController {
 
-    private AstroRepository astroRepository;
     private AstralBodyService astralBodyService;
 
-    public AstralController(AstroRepository astroRepository, AstralBodyService astralBodyService) {
-        this.astroRepository = astroRepository;
+    public AstralController(AstralBodyService astralBodyService) {
         this.astralBodyService = astralBodyService;
     }
 
     @GetMapping("/bodies")
     public List<AstralBody> getAll() {
-        return this.astroRepository.findAll();
+        return this.astralBodyService.getAll();
     }
 
     @GetMapping("/planet/{planet}")
     public AstralBody getPlanetById(@PathVariable("planet") String planet) {
-        return this.astroRepository.findById(planet).orElseThrow();
+        return this.astralBodyService.getAstralBodyById(planet);
     }
 
-    @GetMapping("/astralBody/{astralBody}")
-    public List<String> getWordMeaning(@PathVariable("astralBody") String astralBody) {
-        return this.astralBodyService.singleLineMeaning(astralBody);
+    @GetMapping("/oneLine/{oneLine}")
+    public List<String> getWordMeaning(@PathVariable("oneLine") String oneLine) {
+        return this.astralBodyService.singleLineMeaning(oneLine);
     }
 }

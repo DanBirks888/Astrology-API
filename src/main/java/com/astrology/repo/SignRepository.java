@@ -11,8 +11,10 @@ import java.util.List;
 @Repository
 public interface SignRepository extends MongoRepository<Sign, String> {
     List<Sign> findByElement(String element);
+
     List<Mode> findByMode(String mode);
-    List<House> findByHouse(int house);
+
+    House findByHouse(int house);
 }
 
 

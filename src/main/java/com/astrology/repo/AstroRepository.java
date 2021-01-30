@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface AstroRepository extends MongoRepository<AstralBody, String> {
-    List<String> singleLineMeaning(String name);
+//    List<String> singleLineMeaning(String name);
 }
