@@ -123,13 +123,69 @@ public class SignService {
     "mode": "Cardinal",
     "house": 1,
     "attributes": "Aries is the first sign of the zodiac, and Aries natives are the first to start—and the first to finish—whatever they set out to do. Aries is an active, energetic sign. People with Sun in Aries are direct, straightforward, and uncomplicated. They expect the same from others, and are baffled when they don’t always get it.\n\nThe body comes first with Aries. Sun in Aries people are natural athletes. At the very least, their natural inclination is to use their bodies to get things done. They’re not given to long, drawn-out emotional moments; nor are they big on planning ahead. Instead, they live their lives simply. What is happening right now is most important to Aries. Impatience is a definite vice, and innovation is a huge strength. Aries loves to start anything new, and they have trouble sitting still. They are pioneers in whatever they do, and there is a very basic quality of bravery in these people that is unmistakable! Aries generally knows what they want, and they know the quickest route to getting it. They take shortcuts if they must, but generally, everything is aboveboard. Underhanded just isn’t their style. Some Aries people are bold, but even the quieter ones are brave and even plucky in their own way. Independence is their birthright. Nothing gets them going more than a fresh slate, the promise of a new day, and a brand new start.\n\nAries enjoys a challenge, and Aries Suns are happiest when their lives are moving forward and active. There’s a childlike quality to all Aries Sun people, and it’s often quite charming."
-  },
-  {
-    "zodiac": "Taurus",
-    "element": "Earth",
-    "mode": "Fixed",
-    "house": 2,
-    "attributes": "There is something very solid about Taurus natives, no matter what the rest of their charts say about them. Though they are dependable most of the time, this generally shows itself more in habit than in outright helpfulness.\n\nTaurus natives are sensual folk–and this includes sex, but extends to pleasures in all areas: they delight in the sensual pleasures of food, a comfortable blanket, a richly colored aquarium to look at, the smell of flowers or spring rain, pleasing melodies coming from their stereos, and so forth. Some might even say they live through their senses more than most.\n\nWhen Taurus natives work, they work hard. They do it with a steadiness that may rarely be considered quick–rather it’s a dependable, plodding, and steady effort that has its payoffs. Security is immensely important to Taurus–some of them actively seek wealth, while others are content to be “comfortable”. The Taurus attributes of “comfortable” may not be exactly the same as the rest of the signs, but comfort is definitely a driving force.\n\nAlthough hard-working, their fixed and comfort-loving nature sometimes makes them appear lazy. This is only because they separate work and leisure so well. When they work, they work hard, and when they play, they don’t really “play” as such…they relax. A Solar Taurus who has kicked his or her feet up is rooted there–you’d be hard-pressed to get them to move. On a mental level, you’ll likely have the same problem. Taureans stick with things and ideas, and therein lies one of the reasons why they are known for their stubbornness. Taurus is a fixed sign, and they have a fair measure of tradition and steadiness in their make-up that keeps them rooted.\n\nThe possessiveness associated with Taurus shows up in all areas of life in some way. Taurus likes to own things (and sometimes people). A nice home, a piece of land (this can be modest), a paid-off car, that aquarium mentioned earlier, a couple pets, maybe a solid business…In love and relationship, there is an earthy kind of possessiveness that may be considered jealousy by some, but there is actually quite a difference between being possessive and being jealous. Taurus natives are rarely jealous and petty. They do, however, think of the people they love as theirs–it adds to their sense of security."
-  },
+  }
+```
+
+### MongoDB
+* MongoDB has 5 collections inside the database instead of 1.
+* Sepurating the collections makes returning custom search reults much easier and provides clearer abstraction when scaling this API.
+* An example of why custom search results require different collections can be seen below
+![image](https://user-images.githubusercontent.com/63508057/106437609-59753b00-646d-11eb-912b-9a2c6b694f7f.png)
+
+
+### Custom Search Results
+* This code demonstrates the Class and one method of the custom search controller
+* For a front end client application to benefit from the database as intended, all varients need to be available.
+* In this exmaple, the endpoint takes multiple endpoints through the @GetMapping Annotation.
+* All Objects use the already built services to return appropriate data.
+* This method returns any combination of data from all five collections.
+* The current data in this astrology app is about 30% of the total content. Once Aspects are introduced, the custom search results will become heavy handed and will require alot more abstracted data in different collections to manage and scale effectively.
+```java
+@RestController
+@RequestMapping("/custom")
+public class CustomController {
+
+    private AstralBodyService astralBodyService;
+    private SignService signService;
+    private ElementService elementService;
+    private HouseService houseService;
+    private ModeService modeService;
+
+    public CustomController(AstralBodyService astralBodyService, SignService signService, ElementService elementService, HouseService houseService, ModeService modeService) {
+        this.astralBodyService = astralBodyService;
+        this.signService = signService;
+        this.elementService = elementService;
+        this.houseService = houseService;
+        this.modeService = modeService;
+    }
+    
+    @GetMapping("/search/{astral}/{sign}/{house}/{element}/{mode}")
+    public AstroSearch customSearch(
+            @PathVariable("astral") String astral,
+            @PathVariable("sign") String sign,
+            @PathVariable("house") int house,
+            @PathVariable("element") String element,
+            @PathVariable("mode") String mode) {
+        return new AstroSearch(
+                astralBodyService.getAstralBodyById(astral),
+                signService.getSignByZodiac(sign),
+                houseService.getHouseByName(house),
+                elementService.getElementById(element),
+                modeService.getModeById(mode));
+    }
+
+}
 
 ```
+
+### Future Additions
+
+#### Custom Controller
+* More functionality to the custom search results
+
+#### Aspects
+* All Astral Squares, Oppositions and Trines.
+* All Astral Conjunctions.
+* Astral Body in all Houses Attributes
+* Signs in all Houses Attributes
+* Combinations of Astral Body, House and Sign Attributes
