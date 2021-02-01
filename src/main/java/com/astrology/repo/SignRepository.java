@@ -1,6 +1,5 @@
 package com.astrology.repo;
 
-import com.astrology.model.House;
 import com.astrology.model.Mode;
 import com.astrology.model.Sign;
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -14,7 +13,7 @@ public interface SignRepository extends MongoRepository<Sign, String> {
 
     List<Mode> findByMode(String mode);
 
-    House findByHouse(int house);
+    Sign findSignByHouse(int house);
 }
 
 

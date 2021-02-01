@@ -1,6 +1,5 @@
 package com.astrology.controller;
 
-import com.astrology.model.House;
 import com.astrology.model.Mode;
 import com.astrology.model.Sign;
 import com.astrology.service.SignService;
@@ -42,7 +41,7 @@ public class SignController {
     }
 
     @GetMapping("house/{house}")
-    public House getSignByHouse(@PathVariable("house") int house) {
+    public Sign getSignByHouse(@PathVariable("house") int house) {
         return this.signService.getSignByHouse(house);
     }
 

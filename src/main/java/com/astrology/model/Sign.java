@@ -14,10 +14,10 @@ public class Sign {
     private String zodiac;
     private String element;
     private String mode;
-    private String house;
+    private int house;
     private String attributes;
 
-    public Sign(String zodiac, String element, String mode, String house, String attributes) {
+    public Sign(String zodiac, String element, String mode, int house, String attributes) {
         this.zodiac = zodiac;
         this.element = element;
         this.mode = mode;

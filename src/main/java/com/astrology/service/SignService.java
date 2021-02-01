@@ -1,6 +1,5 @@
 package com.astrology.service;
 
-import com.astrology.model.House;
 import com.astrology.model.Mode;
 import com.astrology.model.Sign;
 import com.astrology.repo.SignRepository;
@@ -38,7 +37,7 @@ public class SignService {
         return this.signRepository.findByMode(mode);
     }
 
-    public House getSignByHouse(int house) {
-        return this.signRepository.findByHouse(house);
+    public Sign getSignByHouse(int house) {
+        return this.signRepository.findSignByHouse(house);
     }
 }
